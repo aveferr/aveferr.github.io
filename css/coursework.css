@@ -1,0 +1,13 @@
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/labs/coursework.jpg') center/cover;
+}
+
+/* Вариант 3 */
+.soon-banner {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    color: white;
+    border-radius: 20px;
+    margin: 2rem auto;
+}

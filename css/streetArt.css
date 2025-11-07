@@ -1,0 +1,466 @@
+/* art.css - Стили для страницы стрит-арта */
+
+/* HERO SECTION */
+.hero {
+    padding-top: 140px;
+    padding-bottom: 80px;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/art/main.jpg') center/cover;
+    color: white;
+    margin-top: 80px;
+}
+
+.art-hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #ff6b00;
+}
+
+.art-hero p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* QUICK NAVIGATION */
+.art-nav {
+    background: #f8f9fa;
+    padding: 20px 0;
+    border-bottom: 1px solid #e9ecef;
+    position: sticky;
+    top: 80px;
+    z-index: 100;
+}
+
+.art-nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.art-nav a {
+    color: #333;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.art-nav a:hover {
+    background: #ff6b00;
+    color: white;
+}
+
+/* SECTION TITLES */
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #1a1a1a;
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 50px;
+}
+
+/* ARTISTS SECTION */
+.artists-section {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.artist-full {
+    margin-bottom: 100px;
+    scroll-margin-top: 140px;
+}
+
+.artist-full:last-child {
+    margin-bottom: 0;
+}
+
+/* ARTIST HEADER */
+.artist-header {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 50px;
+    margin-bottom: 50px;
+    align-items: start;
+}
+
+.artist-visual {
+    position: relative;
+}
+
+.artist-visual img {
+    width: 100%;
+    height: 350px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    object-position: center;
+}
+
+.artist-basic-info h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+}
+
+.artist-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 30px;
+}
+
+.genre,
+.city,
+.years {
+    font-size: 16px;
+    color: #666;
+    font-weight: 500;
+}
+
+.genre {
+    color: #ff6b00;
+    font-weight: 600;
+}
+
+.artist-highlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.highlight-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    border-left: 4px solid #ff6b00;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.highlight-card h4 {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.highlight-card p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+}
+
+/* ARTIST CONTENT */
+.artist-content {
+    background: white;
+    border-radius: 20px;
+    padding: 50px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 50px;
+}
+
+.main-content h3 {
+    font-size: 28px;
+    margin: 40px 0 20px 0;
+    color: #1a1a1a;
+    border-bottom: 2px solid #ff6b00;
+    padding-bottom: 10px;
+}
+
+.main-content h3:first-child {
+    margin-top: 0;
+}
+
+.main-content p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #444;
+    margin-bottom: 25px;
+}
+
+.text-block {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 12px;
+    margin: 30px 0;
+    border-left: 4px solid #ff6b00;
+}
+
+.text-block h4 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+/* GALLERY */
+.artist-gallery,
+.city-gallery {
+    margin: 40px 0;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 200px;
+    border-radius: 12px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
+
+/* SIDEBAR */
+.sidebar {
+    position: sticky;
+    top: 140px;
+    height: fit-content;
+}
+
+.projects,
+.techniques,
+.links,
+.city-facts,
+.locations {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+.projects h4,
+.techniques h4,
+.links h4,
+.city-facts h4,
+.locations h4 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 18px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 8px;
+}
+
+.projects ul,
+.techniques ul,
+.city-facts ul,
+.locations ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.projects li,
+.techniques li,
+.city-facts li,
+.locations li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    color: #555;
+}
+
+.projects li:last-child,
+.techniques li:last-child,
+.city-facts li:last-child,
+.locations li:last-child {
+    border-bottom: none;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-link {
+    display: block;
+    padding: 12px 15px;
+    background: #ff6b00;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.social-link:hover {
+    background: #e55a00;
+    color: white;
+}
+
+/* CITY SECTIONS */
+.city-section {
+    padding: 80px 0;
+}
+
+.city-section.bg-dark {
+    background: #1a1a1a;
+    color: white;
+}
+
+.city-section.bg-dark .city-header h2 {
+    color: white;
+}
+
+.city-section.bg-dark .main-content h3 {
+    color: white;
+    border-bottom-color: #ff6b00;
+}
+
+.city-section.bg-dark .main-content p {
+    color: #ccc;
+}
+
+.city-section.bg-dark .city-facts,
+.city-section.bg-dark .locations {
+    background: #2d2d2d;
+    color: white;
+}
+
+.city-section.bg-dark .city-facts h4,
+.city-section.bg-dark .locations h4 {
+    color: white;
+    border-bottom-color: #444;
+}
+
+.city-section.bg-dark .city-facts li,
+.city-section.bg-dark .locations li {
+    color: #ccc;
+    border-bottom-color: #444;
+}
+
+.city-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.city-header h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #1a1a1a;
+}
+
+.city-subtitle {
+    font-size: 18px;
+    color: #666;
+}
+
+.city-content {
+    background: white;
+    border-radius: 20px;
+    padding: 50px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.city-section.bg-dark .city-content {
+    background: #2d2d2d;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+    .artist-header {
+        grid-template-columns: 250px 1fr;
+        gap: 30px;
+    }
+
+    .content-grid {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .art-hero h1 {
+        font-size: 36px;
+    }
+
+    .art-nav ul {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .artist-header {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .artist-visual img {
+        height: 250px;
+    }
+
+    .content-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .artist-content,
+    .city-content {
+        padding: 30px;
+    }
+
+    .artist-basic-info h2 {
+        font-size: 36px;
+    }
+
+    .sidebar {
+        position: static;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .art-hero {
+        padding-top: 120px;
+        padding-bottom: 60px;
+    }
+
+    .art-hero h1 {
+        font-size: 28px;
+    }
+
+    .artist-content,
+    .city-content {
+        padding: 20px;
+    }
+
+    .artist-highlights {
+        grid-template-columns: 1fr;
+    }
+
+    .main-content h3 {
+        font-size: 24px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+}

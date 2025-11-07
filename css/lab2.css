@@ -1,0 +1,195 @@
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/labs/lab2.jpg') center/cover;
+}
+
+.container
+{
+    display: flex;
+    flex-direction: row;
+}
+.block-animation {
+    border: none;
+    background: url('../img/labs/elka1.png');
+    background-size: contain;
+    display: flex;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.fox {
+    position: absolute;
+    top: 60%;
+    left: 60%;
+    opacity: 100%;
+    border: none;
+    width: 35%;
+}
+
+.tree {
+    position: absolute;
+    top: 30%;
+    left: 0%;
+    opacity: 100%;
+    border: none;
+    width: 65%;
+}
+
+
+
+
+
+
+.block-animation:hover .cloudRight {
+    opacity: 100%;
+    animation: floatCloudRight 5s linear infinite;
+    animation-delay: 0.5s;
+}
+
+.block-animation:hover .cloudLeft {
+    opacity: 100%;
+    animation: floatCloudLeft 5s linear infinite;
+    animation-delay: 0.5s;
+
+}
+
+.clouds-container {
+    top: 10%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between; /* облака автоматически по краям */
+    align-items: flex-start; /* автоматическое выравнивание по верху */
+}
+
+
+
+.cloudRight {
+    width: 40%;
+    opacity: 0%;
+    transition: opacity 0.5s;
+}
+
+.cloudLeft {
+    width: 30%;
+    opacity: 0%;
+    transition: opacity 0.5s;
+}
+
+@keyframes floatCloudLeft {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    100% {
+        transform: translateX(100%) translateY(0);
+    }
+}
+
+@keyframes floatCloudRight {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    100% {
+        transform: translateX(-100%) translateY(0);
+    }
+}
+
+
+
+.tree:hover {
+    animation: shakeTree 1s ease-in-out infinite;
+
+}
+
+@keyframes shakeTree {
+    0%, 100% {
+        transform: rotate(-5deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+}
+
+
+.text-overlay {
+    position: absolute;
+    top: 35%;
+    left: 65%;
+    font-size: 40%;
+    color: #d75f08;
+    opacity: 0%;
+    transition: opacity 0.3s;
+}
+.block-animation:hover .text-overlay {
+    opacity: 100%;
+}
+
+.block-animation:active .text-overlay {
+    opacity: 0%;
+}
+
+.text-active {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    font-size: 50%;
+    color: #d75f08;
+    opacity: 0%;
+    transition: opacity 0.3s;
+    transform: rotate(-40deg);
+
+}
+.block-animation:active .text-active {
+    opacity: 100%;
+}
+
+
+.block-animation:active .fox {
+    opacity: 100%;
+    animation: foxRunning 4s;
+    animation-delay: 0.5s;
+
+}
+
+@keyframes foxRunning {
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+    20% {
+        transform: translate(-20%, -10%) scale(0.9);
+    }
+    40% {
+        transform: translate(30%, -20%) scale(0.8);
+    }
+    60% {
+        transform: translate(-30%, -30%) scale(0.7);
+    }
+    80% {
+        transform: translate(25%, -40%) scale(0.6);
+    }
+    100% {
+        transform: translate(-90%, -50%) scale(0.5);
+    }
+}
+
+
+.block-animation:active {
+    animation: shakeBlock 1s linear infinite;
+}
+
+@keyframes shakeBlock {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-3px);
+    }
+    50% {
+        transform: translateX(3px);
+    }
+    75% {
+        transform: translateX(-2px);
+    }
+}
+
+

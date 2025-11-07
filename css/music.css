@@ -1,0 +1,345 @@
+/* music.css - Стили для страницы музыки с развернутыми секциями */
+
+/* HERO SECTION */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/music/main.jpg') center/cover;
+}
+
+.music-hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #ff6b00;
+}
+
+.music-hero p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* QUICK NAVIGATION */
+.artists-nav {
+    background: #f8f9fa;
+    padding: 20px 0;
+    border-bottom: 1px solid #e9ecef;
+    position: sticky;
+    top: 80px;
+    z-index: 100;
+}
+
+.artists-nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.artists-nav a {
+    color: #333;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.artists-nav a:hover {
+    background: #ff6b00;
+    color: white;
+}
+
+/* ARTISTS SECTIONS */
+.artists-section {
+    padding: 60px 0;
+}
+
+.artist-full {
+    margin-bottom: 100px;
+    scroll-margin-top: 140px;
+}
+
+.artist-full:last-child {
+    margin-bottom: 0;
+}
+
+/* ARTIST HEADER */
+.artist-header {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 50px;
+    margin-bottom: 50px;
+    align-items: start;
+}
+
+.artist-visual {
+    position: relative;
+    overflow: hidden;
+        border-radius: 20px;
+
+
+}
+
+.artist-image.large {
+    height: 350px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.aigel-bg {
+    background: linear-gradient(45deg, #8B0000, #FF4500);
+}
+
+.lunami-bg {
+    background: linear-gradient(45deg, #4B0082, #9370DB);
+}
+
+.defne-bg {
+    background: linear-gradient(45deg, #006400, #32CD32);
+}
+
+.dyshat-bg {
+    background: linear-gradient(45deg, #2F4F4F, #708090);
+}
+
+.artist-basic-info h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+}
+
+.artist-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 30px;
+}
+
+.genre,
+.city,
+.years {
+    font-size: 16px;
+    color: #666;
+    font-weight: 500;
+}
+
+.genre {
+    color: #ff6b00;
+    font-weight: 600;
+}
+
+.artist-highlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.highlight-card {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 12px;
+    border-left: 4px solid #ff6b00;
+}
+
+.highlight-card h4 {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.highlight-card p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+}
+
+/* ARTIST CONTENT */
+.artist-content {
+    background: white;
+    border-radius: 20px;
+    padding: 50px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 50px;
+}
+
+.main-content h3 {
+    font-size: 28px;
+    margin: 40px 0 20px 0;
+    color: #1a1a1a;
+    border-bottom: 2px solid #ff6b00;
+    padding-bottom: 10px;
+}
+
+.main-content h3:first-child {
+    margin-top: 0;
+}
+
+.main-content p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #444;
+    margin-bottom: 25px;
+}
+
+.text-block {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 12px;
+    margin: 30px 0;
+    border-left: 4px solid #ff6b00;
+}
+
+.text-block h4 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+/* SIDEBAR */
+.sidebar {
+    position: sticky;
+    top: 140px;
+    height: fit-content;
+}
+
+.discography,
+.key-tracks,
+.links {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+.discography h4,
+.key-tracks h4,
+.links h4 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 18px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 8px;
+}
+
+.discography ul,
+.key-tracks ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.discography li,
+.key-tracks li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    color: #555;
+}
+
+.discography li:last-child,
+.key-tracks li:last-child {
+    border-bottom: none;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-link {
+    display: block;
+    padding: 12px 15px;
+    background: #ff6b00;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.social-link:hover {
+    background: #e55a00;
+    color: white;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+    .artist-header {
+        grid-template-columns: 250px 1fr;
+        gap: 30px;
+    }
+
+    .content-grid {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .music-hero h1 {
+        font-size: 36px;
+    }
+
+    .artists-nav ul {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .artist-header {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .artist-image.large {
+        height: 250px;
+    }
+
+    .content-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .artist-content {
+        padding: 30px;
+    }
+
+    .artist-basic-info h2 {
+        font-size: 36px;
+    }
+
+    .sidebar {
+        position: static;
+    }
+}
+
+@media (max-width: 480px) {
+    .music-hero {
+        padding-top: 120px;
+        padding-bottom: 60px;
+    }
+
+    .music-hero h1 {
+        font-size: 28px;
+    }
+
+    .artist-content {
+        padding: 20px;
+    }
+
+    .artist-highlights {
+        grid-template-columns: 1fr;
+    }
+
+    .main-content h3 {
+        font-size: 24px;
+    }
+}

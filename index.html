@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="tt">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Заманча Мәдәният</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Manrope&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/logo.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container header__inner">
+            <div class="logo" aria-label="Логотип ТЗМ">
+                <a href="index.html" class="logo-link">
+                    <div class="tmz">
+                        <div class="t">
+                            <div class="tVertical"></div>
+                            <div class="tHorizontal"></div>
+                        </div>
+                        <div class="m">
+                            <div class="mVerticalLeft"></div>
+                            <div class="mVerticalRight"></div>
+                            <div class="mToLeft"></div>
+                            <div class="mToRight"></div>
+                        </div>
+                        <div class="z">
+                            <div class="zTop"></div>
+                            <div class="zBottom"></div>
+                            <div class="zDiagonal"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <nav class="nav">
+                <a href="music.html">Музыка</a>
+                <a href="streetArt.html">Стрит-арт</a>
+                <a href="lab1.html">Задание 1</a>
+                <a href="lab2.html">Задание 2</a>
+                <a href="lab3.html">Задание 3</a>
+                <a href="lab4.html">Задание 4</a>
+                <a href="coursework.html">Курсовая</a>
+
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container">
+            <h1>татарстанның<br>заманча мәдәнияте</h1>
+            <p>Улицы поют, биты дышат татарским духом. Казань — это не только Кремль и чак-чак. Здесь уличные художники
+                рисуют под татарский рэп, а муралы оживают под треки Zainix и AIGEL. С 2015 года фестиваль «Культурный
+                код»
+                превратил серые стены в галереи под открытым небом. Татарская музыка развилась от фольклора до
+                современных жанров — от домбры до 808-х. Граффити здесь — не вандализм, а способ диалога с историей. Рэп
+                на татарском языке — не экзотика, а голос поколения.</p>
+        </div>
+    </section>
+
+    <nav class="page-nav">
+        <div class="container">
+            <ul>
+                <li><a href="#music">Современная татарская музыка</a></li>
+                <li><a href="#art">Уличное современное искусство</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- MUSIC PREVIEW -->
+    <section id="music" class="section">
+        <div class="container">
+            <h2>заманча татар музыкасы</h2>
+            <p>Современная татарская музыка сохраняет национальный дух: мелодии домбры, орнаменты в клипах, татарские
+                слова в текстах. Артисты из Казани, Альметьевска и Набережных Челнов поют о родных улицах, семье,
+                истории. Их треки звучат на фестивалях и в уличных джемах, где стены украшают муралы с теми же мотивами.
+            </p>
+            <div class="slider">
+                <div class="slides" id="slides-music">
+                    <img src="img/main/musicPic1.jpg" alt="1">
+                    <img src="img/main/musicPic2.jpg" alt="2">
+                    <img src="img/main/musicPic3.jpg" alt="3">
+                    <img src="img/main/musicPic4.jpg" alt="4">
+                </div>
+
+                <button class="slider-btn prev" onclick="prevSlide('slides-music')">❮</button>
+                <button class="slider-btn next" onclick="nextSlide('slides-music')">❯</button>
+
+            </div>
+            <a href="music.html" class="btn">аудиотека</a>
+        </div>
+    </section>
+
+    <!-- ART PREVIEW -->
+    <section id="art" class="section bg-dark">
+        <div class="container">
+            <h2>урам сәнгате</h2>
+            <p>Уличное искусство Казани — это татарские орнаменты на стенах, силуэты мечетей и домбр в граффити, имена
+                поэтов на фасадах. Художники из разных районов города рисуют на Баумана, в Кремле, у Волги. Их работы
+                отражают повседневную жизнь, традиции и перемены. Фестивали вроде «Культурный код» открывают новые
+                площадки, где стены становятся частью городской истории.</p>
+            <div class="slider">
+                <div class="slides" id="slides-art">
+                    <img src="img/main/streetPic1.jpg" alt="1">
+                    <img src="img/main/streetPic2.jpg" alt="2">
+                    <img src="img/main/streetPic3.jpg" alt="3">
+                    <img src="img/main/streetPic4.jpg" alt="4">
+                </div>
+
+                <button class="slider-btn prev" onclick="prevSlide('slides-art')">❮</button>
+                <button class="slider-btn next" onclick="nextSlide('slides-art')">❯</button>
+
+            </div>
+            <a href="art.html" class="btn">галерея</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <div class="tmz">
+                        <div class="t">
+                            <div class="tVertical"></div>
+                            <div class="tHorizontal"></div>
+                        </div>
+                        <div class="m">
+                            <div class="mVerticalLeft"></div>
+                            <div class="mVerticalRight"></div>
+                            <div class="mToLeft"></div>
+                            <div class="mToRight"></div>
+                        </div>
+                        <div class="z">
+                            <div class="zTop"></div>
+                            <div class="zBottom"></div>
+                            <div class="zDiagonal"></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <p>© 2025 ТЗМ. by Алина Венидиктова.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
