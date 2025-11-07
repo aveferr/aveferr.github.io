@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/logo.css" />
     <link rel="stylesheet" href="css/coursework.css" />
+    <link rel="stylesheet" href="css/main.css" />
 
 
 
@@ -21,7 +22,6 @@
     <header class="header">
         <div class="container header__inner">
             <div class="logo" aria-label="Логотип ТЗМ">
-                <div class="logo">
                 <a href="index.html" class="logo-link">
                     <div class="tmz">
                         <div class="t">
@@ -42,8 +42,18 @@
                     </div>
                 </a>
             </div>
-            </div>
-            <nav class="nav">
+        
+
+        <!-- Кнопка бургера для мобильных -->
+        <button class="nav-toggle" aria-label="Открыть меню">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <!-- Обновленная навигация -->
+        <nav class="nav">
+            <div class="nav__inner">
                 <a href="music.html">Музыка</a>
                 <a href="streetArt.html">Стрит-арт</a>
                 <a href="lab1.html">Задание 1</a>
@@ -51,7 +61,8 @@
                 <a href="lab3.html">Задание 3</a>
                 <a href="lab4.html">Задание 4</a>
                 <a href="coursework.html">Курсовая</a>
-            </nav>
+            </div>
+        </nav>
         </div>
     </header>
 
@@ -94,6 +105,8 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="js/main.js"></script>
+
 </body>
 
 </html>

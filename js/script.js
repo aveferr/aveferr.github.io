@@ -1,36 +1,36 @@
-
-
-
-// Управление мобильным меню
-function initMobileMenu() {
-    const navToggle = document.querySelector('.nav-toggle');
-    const nav = document.querySelector('.nav');
-    const navOverlay = document.querySelector('.nav-overlay');
+// Универсальная инициализация для всех страниц
+function initAll() {
+    console.log('Initializing all components...');
     
-    function toggleMenu() {
-        navToggle.classList.toggle('active');
-        nav.classList.toggle('active');
-        navOverlay.classList.toggle('active');
-        document.body.style.overflow = nav.classList.contains('active') ? 'hidden' : '';
+    // Мобильное меню
+    const burger = document.querySelector('.nav-toggle');
+    const menu = document.querySelector('.nav');
+    
+    if (burger && menu) {
+        burger.addEventListener('click', function() {
+            console.log('Toggle menu');
+            burger.classList.toggle('active');
+            menu.classList.toggle('active');
+        });
+        
+        document.querySelectorAll('.nav a').forEach(link => {
+            link.addEventListener('click', function() {
+                burger.classList.remove('active');
+                menu.classList.remove('active');
+            });
+        });
     }
     
-    navToggle.addEventListener('click', toggleMenu);
-    navOverlay.addEventListener('click', toggleMenu);
-    
-    // Закрытие меню при клике на ссылку
-    document.querySelectorAll('.nav a').forEach(link => {
-        link.addEventListener('click', () => {
-            navToggle.classList.remove('active');
-            nav.classList.remove('active');
-            navOverlay.classList.remove('active');
-            document.body.style.overflow = '';
-        });
-    });
+    // Слайдеры
+    if (typeof initSlider === 'function') {
+        if (document.getElementById('slides-music')) initSlider('slides-music');
+        if (document.getElementById('slides-art')) initSlider('slides-art');
+    }
 }
 
-// Запуск при загрузке
-window.onload = () => {
-    initSlider('slides-music');
-    initSlider('slides-art');
-    initMobileMenu(); // Инициализируем мобильное меню
-};
+// Запуск когда DOM готов
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initAll);
+} else {
+    initAll();
+}
